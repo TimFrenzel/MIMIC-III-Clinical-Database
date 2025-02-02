@@ -69,24 +69,24 @@ D3.js is used for the interactive HTML; no Python dependency is needed for it.)
 **Age vs. ICU LOS by Outcome:**
 Older patients tend to have shorter ICU stays, potentially due to earlier palliative care interventions.
 Survivors generally stay longer than non-survivors, with younger patients showing high variability in ICU stay.
-  ```markdown
-  ![Age vs ICU LOS](outputs/age_vs_icu_los_by_gender.png)```
+   ![Age vs ICU LOS](outputs/age_vs_icu_los_by_gender.png)
 **Diagnosis Co-Occurrence Network:**
 Hypertension, Atrial Fibrillation, and Congestive Heart Failure are the most frequently co-occurring conditions, indicating common cardiovascular disease clusters.
 Acute kidney failure is strongly linked to sepsis, highlighting its role in multi-organ dysfunction.
-
+   ![Age vs ICU LOS](outputs/top10_diagnosis_cooccurrence_network.png)
 **Key Lab Trends Before ICU Admission:**
 Non-survivors show sharp declines in WBC and RBC levels, suggesting immunosuppression or late-stage sepsis.
 Elevated ferritin and fibrinogen levels in non-survivors suggest ongoing systemic inflammation.
-
+   ![Age vs ICU LOS](outputs/key_lab_trends_with_differences.png)
 **Polypharmacy vs. Age:**
 Older patients, especially those in emergency admissions, take more medications—a marker for higher chronic disease burden.
 Higher medication counts are correlated with longer hospital stays.
-
+   ![Age vs ICU LOS](outputs/polypharmacy_vs_age.png)
 **Post-Surgical Infections:**
 Procedures like percutaneous abdominal drainage and IV feeding exhibit significantly higher infection-related ICU stays.
 Some procedures, such as coronary artery catheterization, have lower infection risks, suggesting differences in procedural infection susceptibility.
-
+   ![Age vs ICU LOS](outputs/top5_post_surgical_infections_with_counts.png)
 **Health Risk Radar Chart:**
 Men exhibit higher risks for conditions such as hypertension and underactive thyroid, whereas women show increased risks for congestive heart failure and acute kidney failure in the 90+ age group.
 Type 2 diabetes is a common risk factor across both genders, underscoring the importance of early metabolic control.
+   ![Age vs ICU LOS](outputs/Health Risk Radar Chart.png)
