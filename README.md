@@ -9,19 +9,19 @@ The project includes two main components:
 1. **MIMIC Visualizations (`mimic_visualizations.py`):**  
    Generates five distinct visualizations:
    - **Age vs. ICU LOS by Outcome (Faceted by Gender):**  
-     *Key Finding:* Older patients tend to have shorter ICU stays—possibly due to earlier palliative care interventions—while survivors generally show longer stays, with younger patients displaying high variability.
-     
+     *Hypothesis:* Older patients may experience longer ICU stays and different outcomes.  
+
    - **Diagnosis Co-Occurrence Network for the Top 10 Diagnoses:**  
-     *Key Finding:* Hypertension, Atrial Fibrillation, and Congestive Heart Failure frequently co-occur. Additionally, acute kidney failure is strongly linked to sepsis.
+     *Hypothesis:*Certain diagnoses frequently co-occur, indicating common comorbidities.  
      
    - **Key Lab Trends Before ICU Admission (Survivors vs. Non-Survivors):**  
-     *Key Finding:* Non-survivors show sharp declines in WBC/RBC levels and persistently high ferritin/fibrinogen levels, indicating late-stage sepsis and systemic inflammation.
+     *Hypothesis:* Lab value trends before ICU admission differ between survivors and non-survivors.  
      
    - **Polypharmacy vs. Age Bubble Chart:**  
-     *Key Finding:* Older patients, especially in emergency admissions, generally take more medications, which correlates with longer hospital stays.
+     *Hypothesis:* The number of medications (polypharmacy) is associated with patient age and may influence hospital stay. 
      
    - **Post-Surgical Infections and Their Impact on ICU LOS:**  
-     *Key Finding:* Procedures such as percutaneous abdominal drainage and IV feeding show significantly higher infection-related ICU stays, while some procedures (e.g., coronary artery catheterization) exhibit lower infection risk.
+     *Hypothesis:* Some surgical procedures have a higher infection impact on LOS, reflected in both LOS differences and patient counts.
 
 2. **Risk Factors Extraction (`risk_factors_extraction.py`):**  
    Dynamically extracts the top 20 diagnoses, maps them to human-readable labels, aggregates patient data (including age groups and survival status), and outputs the top 6 risk factors in a JSON file.
@@ -69,7 +69,8 @@ D3.js is used for the interactive HTML; no Python dependency is needed for it.)
 **Age vs. ICU LOS by Outcome:**
 Older patients tend to have shorter ICU stays, potentially due to earlier palliative care interventions.
 Survivors generally stay longer than non-survivors, with younger patients showing high variability in ICU stay.
-
+  ```markdown
+  ![Age vs ICU LOS](outputs/age_vs_icu_los_by_gender.png)```
 **Diagnosis Co-Occurrence Network:**
 Hypertension, Atrial Fibrillation, and Congestive Heart Failure are the most frequently co-occurring conditions, indicating common cardiovascular disease clusters.
 Acute kidney failure is strongly linked to sepsis, highlighting its role in multi-organ dysfunction.
