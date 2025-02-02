@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Risk Radar Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .slider-container {
+            margin: 10px;
+        }
+        .axis-label {
+            font-size: 12px;
+            fill: #555;
+        }
+        .chart-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 500px; /* Responsive max size */
+            margin: auto;
+        }
+        .legend {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        svg {
+            width: 85%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Health Risk Radar Chart</h2>
+
+    <!-- Age Group Slider -->
+    <div class="slider-container">
+        <label for="age-slider">Select Age Group:</label>
+        <input type="range" id="age-slider" min="0" max="3" step="1" value="0">
+        <span id="age-label">Age Group: 30-50</span>
+    </div>
+
+    <!-- Survival Status Dropdown -->
+    <div class="slider-container">
+        <label for="survival-filter">Select Survival Status:</label>
+        <select id="survival-filter">
+            <option value="All">All</option>
+            <option value="Survived">Survived</option>
+            <option value="Expired">Deceased</option>
+        </select>
+    </div>
+
+    <div class="chart-container">
+        <svg viewBox="0 0 510 510" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(255, 255)"></g>
+        </svg>
+        <div class="legend">
+            <span style="color: blue;">■ Male Health Profile</span>
+            <span style="color: red; margin-left: 20px;">■ Female Health Profile</span>
+        </div>
+    </div>
+
+    <script>
+        // Set dimensions (15% smaller)
+        const width = 510, height = 510, radius = 210;
+        const svg = d3.select("svg").select("g");
+
+        // Define Age Groups
+        const ageGroups = ["30-50", "50-70", "70-90", "90+"];
+
+        // Map medical terms to more understandable terms
+        const termMapping = {
+            "Acute kidney failure NOS": "Acute Kidney Failure",
+            "Atrial fibrillation": "Irregular Heartbeat",
+            "CHF NOS": "Congestive Heart Failure",
+            "DMII wo cmp nt st uncntr": "Type 2 Diabetes (Uncontrolled)",
+            "Hypertension NOS": "High Blood Pressure",
+            "Hypothyroidism NOS": "Underactive Thyroid"
+        };
+
+        // Load Data
+        d3.json("risk_factors.json").then(data => {
+            let currentAgeGroup = "30-50";
+
+            function updateChart() {
+                // Get selected survival status
+                const selectedSurvival = d3.select("#survival-filter").property("value");
+
+                // Filter Data for Selected Age Group & Survival Status
+                const filteredData = data.filter(d => 
+                    d.age_group === currentAgeGroup && 
+                    (selectedSurvival === "All" || d.survival_status === selectedSurvival)
+                );
+
+                // Define risk factors dynamically from dataset
+                let riskCategories = [...new Set(filteredData.map(d => d.risk_factor))];
+                riskCategories = riskCategories.map(risk => termMapping[risk] || risk); // Apply term mapping
+                const genders = ["M", "F"];
+
+                // Prepare data for radar chart
+                const formattedData = genders.map(gender => ({
+                    gender: gender,
+                    values: riskCategories.map(risk => {
+                        let entry = filteredData.find(d => d.gender === gender && (termMapping[d.risk_factor] || d.risk_factor) === risk);
+                        return { axis: risk, value: entry ? entry.count : 0 };
+                    })
+                }));
+
+                // Clear Previous Chart
+                svg.selectAll("*").remove();
+                const angleSlice = (2 * Math.PI) / riskCategories.length;
+
+                // Axis Lines
+                riskCategories.forEach((risk, i) => {
+                    const x = radius * Math.cos(angleSlice * i - Math.PI / 2);
+                    const y = radius * Math.sin(angleSlice * i - Math.PI / 2);
+                    svg.append("line")
+                        .attr("x1", 0).attr("y1", 0)
+                        .attr("x2", x).attr("y2", y)
+                        .attr("stroke", "#ccc");
+
+                    svg.append("text")
+                        .attr("x", x * 1.1)
+                        .attr("y", y * 1.1)
+                        .attr("text-anchor", "middle")
+                        .attr("alignment-baseline", "middle")
+                        .text(risk);
+                });
+
+                // Scales
+                const maxValue = d3.max(formattedData.flatMap(d => d.values.map(v => v.value)));
+                const scale = d3.scaleLinear().domain([0, maxValue]).range([0, radius]);
+
+                // Radar Areas
+                const line = d3.lineRadial()
+                    .angle((d, i) => i * angleSlice - Math.PI / 2)
+                    .radius(d => scale(d.value));
+
+                svg.selectAll(".radar-area")
+                    .data(formattedData)
+                    .enter().append("path")
+                    .attr("d", d => line(d.values))
+                    .attr("fill", (d, i) => i === 0 ? "blue" : "red")
+                    .attr("opacity", 0.4)
+                    .attr("stroke", "black")
+                    .attr("stroke-width", 2);
+            }
+
+            // Initial Render
+            updateChart();
+
+            // Event Listeners
+            d3.select("#age-slider").on("input", function () {
+                currentAgeGroup = ageGroups[this.value];
+                d3.select("#age-label").text("Age Group: " + currentAgeGroup);
+                updateChart();
+            });
+
+            d3.select("#survival-filter").on("change", updateChart);
+        });
+    </script>
+</body>
+</html>

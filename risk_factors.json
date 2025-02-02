@@ -1,0 +1,506 @@
+[
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 1
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 1
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 1
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 3
+    },
+    {
+        "gender": "F",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 1
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 4
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 3
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 1
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 3
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 4
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 5
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 2
+    },
+    {
+        "gender": "F",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 1
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 10
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 13
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 3
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 13
+    },
+    {
+        "gender": "M",
+        "age_group": "50-70",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 13
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 1
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "70-90",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Atrial fibrillation",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "CHF NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Hypertension NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Expired",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Acute kidney failure NOS",
+        "count": 4
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Atrial fibrillation",
+        "count": 2
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "CHF NOS",
+        "count": 4
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "DMII wo cmp nt st uncntr",
+        "count": 5
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Hypertension NOS",
+        "count": 3
+    },
+    {
+        "gender": "M",
+        "age_group": "90+",
+        "survival_status": "Survived",
+        "risk_factor": "Hypothyroidism NOS",
+        "count": 0
+    }
+]
